@@ -19,6 +19,17 @@ int main()
     cout << "Please enter a value for B: ";
     cin >> B; 
     cout << endl;
+    
+    if (B < 0) {
+        cout << "Solving " << A << "x" << B << "=0 for x..." << endl;
+    } else {
+        cout << "Solving " << A << "x+" << B << "=0 for x..." << endl;
+    }
+    
+    
+    cout << "The answer is:";
+    X = -B / A;
+    cout << "x= " << X << endl;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
